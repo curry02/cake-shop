@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <nav className="navbar">
             <h1>Daangoo</h1>
             <div className="right">
-                <h2  className="contact">Contact</h2>
-                <h2 className="order"> Order </h2>
+                <Link to="/contact" className="contact">Contact</Link>
+                <Link to="/order" className="order"> Order </Link>
             </div>
         </nav>
 

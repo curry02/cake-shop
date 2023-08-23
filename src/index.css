@@ -1,20 +1,76 @@
+
+
 *{
   background: #94AFFF; 
 }
 
+.contactPage a{
+  text-decoration: none;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 90 auto;
+  padding-bottom: 0px;
+  color: azure;
+  font-size: 23px;
+}
 
-.App img{
+.contactPage h2 {
+  color: azure;
+  position: relative;
+  display: inline-block;
+  padding-left: 90px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contactPage h3{
+  color: azure;
+  float: left;
+  margin-left: 380px;
+  font-size: 25px;
+  display: block;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.contactPage p {
+  display: block;
+  color: azure;
+  width: 25%;
+  margin-left: 260px;
+  font-size: 20px;
+  align-items: flex-start;
+}
+
+.contactCake{
+  width: 250px;
+  z-index: -1;
+  display:  inline-block;
+  height: 40%;
+}
+
+.contactPage a:hover {
+  color: black;
+}
+
+.home img{
   z-index: -1;
   max-width: 66%;
   background-position: center;
-  
+  object-position: -10px -10px;
+  padding-right: 150px;
 }
 
-.App p {
+.home p {
   z-index: 1;
   font-size: large;
   color: azure;
+  align-self: start;
+  display: inline-block;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .bar h2 {
@@ -22,37 +78,63 @@
   float: left;
   padding: 50px;
 }
+
 .bar checkout {
   display: inline-block;
-
 }
-
-.App p {
-  display: inline-block;
-}
-
 
 .navbar {
   color: white;
 }
+
 .navbar h1 {
   float: left;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-right: 0;
   padding-bottom:0;
   padding-left: 70px;
   font-weight: bold;
-  font-size: 62;
+  font-size: 80;
+  display:block;
 }
-.navbar h2 {
+/* .navbar right contact{
   float: right;
-  padding-right: 60px;
   padding-top: 60px;
   padding-bottom:0px;
 }
+.navbar right {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color:azure;
+} */
 
-.nav h2 contact {
-  padding-right: 50px;
+.navbar a contact {
+  padding-right: 20px;
+}
+
+.navbar right {
+  float: right;
+}
+.navbar a {
+  z-index: 1;
+  margin-right: 16px;
+  text-decoration: none;
+  float: right;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  color: azure;
+  font-size: 23px;
+
+}
+.navbar a:hover {
+  color: #000000;
 }
 
 
