@@ -1,0 +1,74 @@
+*{
+  background: #94AFFF; 
+}
+
+
+.App img{
+  z-index: -1;
+  max-width: 66%;
+  background-position: center;
+  
+}
+
+.App p {
+  z-index: 1;
+  font-size: large;
+  color: azure;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bar h2 {
+  display: inline;
+  float: left;
+  padding: 50px;
+}
+.bar checkout {
+  display: inline-block;
+
+}
+
+.App p {
+  display: inline-block;
+}
+
+
+.navbar {
+  color: white;
+}
+.navbar h1 {
+  float: left;
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom:0;
+  padding-left: 70px;
+  font-weight: bold;
+  font-size: 62;
+}
+.navbar h2 {
+  float: right;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom:0px;
+}
+
+.nav h2 contact {
+  padding-right: 50px;
+}
+
+
+.logo {
+  height: 100%;
+  z-index: -1;
+  display: center;
+  position: center;
+  background-repeat: no-repeat;
+}
+
+.cakeSelection {
+  display: block;
+}
+
+.cake {
+  display: inline-block;
+  padding: 30px;
+}
