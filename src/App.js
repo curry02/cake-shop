@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CakeSelection from './CakeSelection';
 import Home from './Home';
 import Contact from './Contact';
+import TwoChoices from './TwoChoices';
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
             <Contact/>
           </Route>
 
-          <Route path="chooseFromSelection">
+          <Route path="/order">
+            <TwoChoices/>
+          </Route>
+
+          <Route path="/chooseFromSelection">
             <CakeSelection />
           </Route>
         </Switch>

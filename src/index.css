@@ -4,7 +4,8 @@
   background: #94AFFF; 
 }
 
-.contactPage a{
+.contactPage a, .twochoices a , .bar a{
+  color: azure;
   text-decoration: none;
   padding: 50px;
   display: flex;
@@ -12,9 +13,9 @@
   max-width: 600px;
   margin: 90 auto;
   padding-bottom: 0px;
-  color: azure;
   font-size: 23px;
 }
+
 
 .contactPage h2 {
   color: azure;
@@ -28,31 +29,55 @@
 .contactPage h3{
   color: azure;
   float: left;
-  margin-left: 380px;
+  margin-left: 30%;
   font-size: 25px;
   display: block;
-  padding-right: 100px;
   padding-bottom: 10px;
+  text-decoration: underline;
 }
 
 .contactPage p {
   display: block;
   color: azure;
   width: 25%;
-  margin-left: 260px;
+  margin-left: 22%;
   font-size: 20px;
-  align-items: flex-start;
+  transform: translateY(-320px);
 }
 
 .contactCake{
-  width: 250px;
+  width: 225px;
   z-index: -1;
   display:  inline-block;
-  height: 40%;
+  object-position:contain;
+  height: 20%;
 }
 
-.contactPage a:hover {
+.contactPage a:hover, .twochoices a:hover, .bar a:hover{
   color: black;
+}
+
+.buttons a:hover {
+  color: black;
+  border: 5px solid black;
+}
+
+.twochoices a{
+  padding-bottom: 75px;
+  margin: 30px;
+}
+
+
+
+.buttons a{
+  color: azure;
+  padding: 25px;
+  border: 5px solid azure;
+  text-align: center;
+  float: center;
+  margin-left: 25%;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .home img{
@@ -97,27 +122,7 @@
   font-size: 80;
   display:block;
 }
-/* .navbar right contact{
-  float: right;
-  padding-top: 60px;
-  padding-bottom:0px;
-}
-.navbar right {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  color:azure;
-} */
 
-.navbar a contact {
-  padding-right: 20px;
-}
-
-.navbar right {
-  float: right;
-}
 .navbar a {
   z-index: 1;
   margin-right: 16px;
