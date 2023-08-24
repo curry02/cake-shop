@@ -3,7 +3,6 @@ import Bar from "./Bar";
 import DeleteFromCart from "./DeleteFromCart";
 import AddToCart from "./AddToCart";
 
-
 const CakeSelection = () => {
     const [cakeSelection, setCakeSelection] = useState(null);
     const [error, setError] = useState(null);
@@ -22,6 +21,11 @@ const CakeSelection = () => {
         var newArray = cakeCart.slice();
         newArray[id]=newArray[id]+1;
         setCakeCart(newArray);
+    };
+
+
+    const checkout = (cart) => {
+        /*filter cakeCart, */
     };
 
     useEffect(() => {
@@ -44,17 +48,17 @@ const CakeSelection = () => {
 
     return (
         <>
-        <Bar/>
+        <Bar checkout={checkout} cart={cakeCart}/>
         <div className="cake-selection">
             {cakeSelection===null ? (error===null ? (<h1 className="loading">Loading...</h1>) : (<h1>Error has occurred</h1>)) :
+            
             cakeSelection.map((cake)=> (
                 <div className="cake" key={cake.id}>
-                    
-                    <img src={cake.image} className="cakePic"></img>
+                    <img className ="cakeImage" src={"/images/"+cake.image+".png"} alt=""/> 
                     <h2>{cake.name} </h2>
-                    <DeleteFromCart id={cake.id} dec={dec} />
+                    <DeleteFromCart className ="minus" id={cake.id} dec={dec} />
                     {cakeCart[cake.id]}
-                    <AddToCart id={cake.id} inc={inc} />
+                    <AddToCart className="plus" id={cake.id} inc={inc} />
                 </div>
                 
             ))}

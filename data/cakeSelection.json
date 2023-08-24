@@ -1,8 +1,9 @@
 {
     "cakeSelection":  [
 
-        {"name": "Mango Rose Cake", "image":"mangoRoseCake", "price": "50.00", "size": "8", "contents": "Contains: \n Strawberry, sugar, wheat, flour, mango, blueberry, whipped cream, raspberry", "id": 0 },
-        {"name": "Chocolate Wonderland", "image": "", "price": "50.00", "size": "10", "contents": "Contains: \n chocolate", "id": 1}, 
-        {"name": "Macaron Flowers", "image": "", "price": "40.00", "size": "6", "contents": "Contains: \n macarons, vanilla", "id": 2}
+        {"name": "Mango Rose Cake", "image":"MangoRoseCake", "price": "50.00", "size": "8", "contents": "Contains: \n Strawberry, sugar, wheat, flour, mango, blueberry, whipped cream, raspberry", "id": 0 },
+        {"name": "Chocolate Wonderland", "image": "ChocolateWonderland", "price": "50.00", "size": "10", "contents": "Contains: \n chocolate", "id": 1}, 
+        {"name": "Macaron Flowers", "image": "MacaronFlower", "price": "40.00", "size": "6", "contents": "Contains: \n macarons, vanilla", "id": 2},
+        {"name": "Christmas Strawberry Shortcake", "image": "ChristmasStrawberryShortcake", "price": "55.00", "size": "8", "contents": "Contains: \n strawberry, vanilla, sugar, chocolate, whipping cream", "id": 3}
     ]
 }

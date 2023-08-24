@@ -1,11 +1,11 @@
 import {Link} from "react-router-dom";
 
 
-const Bar = () => {
+const Bar = (checkout, cart) => {
     return (
         <div className="bar">
             <Link to="/order"> {"<"} back </Link>
-            <button className="checkout"> checkout </button>
+            <button onClick={()=>checkout(cart)}className="checkout"> checkout </button>
         </div>
     );
 }
