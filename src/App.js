@@ -4,7 +4,6 @@ import CakeSelection from './CakeSelection';
 import Home from './Home';
 import Contact from './Contact';
 import TwoChoices from './TwoChoices';
-import CheckoutPage from './CheckoutPage';
 import CakeDetails from './CakeDetails';
 import Checkout from './Checkout';
 
