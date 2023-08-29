@@ -4,6 +4,9 @@ import CakeSelection from './CakeSelection';
 import Home from './Home';
 import Contact from './Contact';
 import TwoChoices from './TwoChoices';
+import CheckoutPage from './CheckoutPage';
+import CakeDetails from './CakeDetails';
+import Checkout from './Checkout';
 
 function App() {
   return (
@@ -26,6 +29,15 @@ function App() {
           <Route path="/chooseFromSelection">
             <CakeSelection />
           </Route>
+
+          <Route path= "/cakeSelection/:id">
+            <CakeDetails />
+          </Route>
+
+          <Route path="/checkout">
+            <Checkout/>
+          </Route>
+          
         </Switch>
         
       </div>

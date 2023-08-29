@@ -2,7 +2,7 @@
   background: #94AFFF; 
 }
 
-.contactPage a, .twochoices a , .bar a{
+.contactPage a, .twochoices a , .bar a, .back{
   color: azure;
   text-decoration: none;
   padding: 50px;
@@ -51,7 +51,7 @@
   height: 20%;
 }
 
-.contactPage a:hover, .twochoices a:hover, .bar a:hover{
+.contactPage a:hover, .twochoices a:hover, .bar a:hover, .back:hover{
   color: black;
 }
 
@@ -64,7 +64,7 @@
   padding-bottom: 75px;
 }
 
-.bar button {
+.checkout, .disabled{
   font-size: larger;
   margin-right: 15%;
   display: inline-block;
@@ -73,7 +73,7 @@
   font-weight: lighter;
 }
 
-.bar button:hover{
+.checkout:hover, .detailsButton:hover{
   background-color: #7598FF;
 }
 
@@ -114,8 +114,11 @@
   padding: 50px;
 }
 
-.bar button{
-  float: right;
+.detailsButton {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: 2px solid black;
+  padding-right: 3px;
 }
 
 .navbar {
@@ -163,7 +166,6 @@
 
 .cakeSelection {
   display: block;
-
 } 
 
 
@@ -173,21 +175,57 @@
 
 }
 
-.checkout {
+.checkout, .disabled{
   display: block;
+  border: solid 2px azure;
+  text-decoration: none;
+  float: right;
+  color: azure;
+}
+
+.checkout:hover{
+  color: black;
+  border-color: black;
 }
 
 
 .cake {
+  margin-left:40px;
+  margin-top: 40px;
   max-width: 240px;
   float: left;
   display: block;
   padding: 30px;
 }
+
+
 .cakeImage {
   width: 200px;
   height:200px;
   border-radius: 15px;
+}
+
+.cakeDetails {
+  border: 10px solid azure;
+}
+
+.cakeDetails p {
+  font-size: x-large;
+  
+}
+.cakeContents {
+  width: 500px;
+  float: right;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.detailImage {
+  width: 400px;
+  float: left;
+  padding: 2%;
+  border-radius: 25%;
+  transform: translateX(50px);
 }
 
 
