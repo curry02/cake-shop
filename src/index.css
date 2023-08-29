@@ -64,7 +64,7 @@
   padding-bottom: 75px;
 }
 
-.checkout, .disabled{
+.checkout, .disabled, .form button{
   font-size: larger;
   margin-right: 15%;
   display: inline-block;
@@ -175,15 +175,16 @@
 
 }
 
-.checkout, .disabled{
+.checkout, .disabled, .form button{
   display: block;
   border: solid 2px azure;
   text-decoration: none;
   float: right;
   color: azure;
+ margin-top:0px;
 }
 
-.checkout:hover{
+.checkout:hover {
   color: black;
   border-color: black;
 }
@@ -228,4 +229,36 @@
   transform: translateX(50px);
 }
 
+.orders {
+  width: 60%;
+}
 
+.form {
+  float: right;
+  max-width: 50%;
+  margin-right:10%;
+  block-size: 15px;
+}
+
+.total {
+  text-align: left;
+}
+
+.form label {
+  font-size: x-large;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form input, .form select, .form textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form select {
+  font-size: 15px;
+}
