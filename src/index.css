@@ -184,7 +184,7 @@
  margin-top:0px;
 }
 
-.checkout:hover {
+.checkout:hover, .enabled:hover, .goHome:hover{
   color: black;
   border-color: black;
 }
@@ -261,4 +261,16 @@
 
 .form select {
   font-size: 15px;
+}
+
+.thankyou {
+  text-align: center;
+}
+
+.goHome {
+  text-decoration: none;
+  font-size: 24px;
+  border: 3px solid azure;
+  padding: 5px;
+  color: azure;
 }

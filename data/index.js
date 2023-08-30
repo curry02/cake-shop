@@ -1,7 +1,7 @@
 const cakeSelection = require("./cakeSelection");
 const cart = require("./cart.json");
-const db = require("./db.json");
+const shop = require("./shop.json");
 
 module.exports = () => ({
-    cakeSelection, cart, db
+    cakeSelection, cart, shop
 });

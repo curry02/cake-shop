@@ -1,6 +1,5 @@
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import { useState, useEffect } from "react";
-import Total from "./Total";
 
 const Checkout = () => {
     const [name, setName] = useState("");
@@ -11,7 +10,8 @@ const Checkout = () => {
     const [cart, setCart] = useState(null);
     const [error, setError] = useState(null);
     const [total, setTotal] = useState(0);
-    /*fetch*/
+    const history=useHistory();
+    
 
     useEffect(() => {
         fetch('http://localhost:8000/cart')
@@ -25,15 +25,30 @@ const Checkout = () => {
             setCart(data);
             setError(null);
         })
+        .then(()=> {
+            var t=0;
+            for (let i=0; i<cart.length; i++) {
+                t=t+cart[i].num*cart[i].cake.price;
+            } 
+            setTotal(t);
+        })
         .catch((err)=>{
             setError(err.message);
         })
-    }, []);
+    }, [error]);
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const order = {name, phone, plate, message, }
+        const order = {name, phone, plate, message, cart, total};
+
+        fetch('http://localhost:8000/shop', {
+            method: "POST",
+            headers: { "Content-type": "application/json"},
+            body: JSON.stringify(order)
+        }).then(() => {
+            history.push("/thankyou")
+        })
     };
   
     
@@ -43,26 +58,25 @@ const Checkout = () => {
 
         <form className="form" onSubmit={handleSubmit}>
 
-            <h1 className="total">Total: $<Total /></h1>
-
+            <h1 className="total">Total: ${total}</h1>
 
             <label>Name: </label>
-            <input type="text" required />
+            <input type="text" required value={name} onChange={((e)=>setName(e.target.value))}/>
 
             <label>Phone Number: </label>
-            <input type="number" required />
+            <input type="number" required value={phone} onChange={((e)=>setPhone(e.target.value))}/>
 
             <label>Edible Cake Message Plate: </label>
-            <select>
+            <select value={plate} onChange={((e)=>setPlate(e.target.value))}>
                 <option value="None">None</option>
                 <option value="White Chocolate">White Chocolate</option>
                 <option value="Brown Chocolate">Brown Chocolate</option>
             </select>
 
             <label>Plate Message / Additional Comments: </label>
-            <textarea></textarea>
+            <textarea value={message} onChange={((e)=>setMessage(e.target.value))}></textarea>
 
-            {(cart!==null && cart.length==0) ? <button disabled>Submit</button> : <button>Submit</button>
+            {(cart!==null && cart.length==0) ? <button className="disabled" disabled>Submit</button> : <button className="enabled">Submit</button>
         }
         </form>
 

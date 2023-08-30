@@ -6,6 +6,7 @@ import Contact from './Contact';
 import TwoChoices from './TwoChoices';
 import CakeDetails from './CakeDetails';
 import Checkout from './Checkout';
+import Thankyou from './Thankyou';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
 
           <Route path="/checkout">
             <Checkout/>
+          </Route>
+
+          <Route path="/thankyou">
+            <Thankyou />
           </Route>
           
         </Switch>
