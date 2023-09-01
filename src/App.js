@@ -30,6 +30,9 @@ function App() {
             <CakeSelection />
           </Route>
 
+
+          
+
           <Route path= "/cakeSelection/:id">
             <CakeDetails />
           </Route>

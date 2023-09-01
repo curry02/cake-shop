@@ -164,8 +164,8 @@
   background-repeat: no-repeat;
 }
 
-.cakeSelection {
-  display: block;
+.cakeselection {
+  display: inline-block;
 } 
 
 
@@ -181,7 +181,7 @@
   text-decoration: none;
   float: right;
   color: azure;
- margin-top:0px;
+  margin-top:0px;
 }
 
 .checkout:hover, .enabled:hover, .goHome:hover{
@@ -189,14 +189,14 @@
   border-color: black;
 }
 
-
 .cake {
   margin-left:40px;
   margin-top: 40px;
-  max-width: 240px;
-  float: left;
-  display: block;
+  width: 230px;
   padding: 30px;
+  display:inline-table;
+  float: left;
+  vertical-align: middle;
 }
 
 
@@ -212,8 +212,8 @@
 
 .cakeDetails p {
   font-size: x-large;
-  
 }
+
 .cakeContents {
   width: 500px;
   float: right;

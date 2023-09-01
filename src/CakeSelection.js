@@ -82,7 +82,7 @@ const CakeSelection = () => {
         </Link>)}
 
         {/*make cakeSelection after reading json file successfully */}
-        <div className="cake-selection">
+        <div className="cakeselection">
             {cakeSelection===null ? (error===null ? (<h1 className="loading">Loading...</h1>) : (<h1>Error has occurred</h1>)) :
             /*take out .cakeSelection if running only one json file */
             cakeSelection.cakeSelection.map((cake)=> (
