@@ -7,8 +7,11 @@ import TwoChoices from './TwoChoices';
 import CakeDetails from './CakeDetails';
 import Checkout from './Checkout';
 import Thankyou from './Thankyou';
+import Customization from './Customization';
 
 function App() {
+
+
   return (
     <Router>
       <div className="App">
@@ -31,7 +34,13 @@ function App() {
           </Route>
 
 
-          
+          <Route path="/customize">
+            <Customization />
+          </Route>
+
+          <Route path="/step2">
+
+          </Route>
 
           <Route path= "/cakeSelection/:id">
             <CakeDetails />
@@ -53,3 +62,4 @@ function App() {
 }
 
 export default App;
+ 

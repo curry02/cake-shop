@@ -83,7 +83,7 @@ const Checkout = () => {
         <div className="orders">
             {cart===null ? (error===null ? (<h1 className="loading">Loading...</h1>) : (<h1>Error has occurred</h1>)) :
 
-            cart.map((order)=> (
+            cart?.map((order)=> (
                 <div className="cake" key={order.id}>
                     <img className ="cakeImage" src={"/images/"+order.cake.image+".png"}/> 
                     <h2>{order.cake.name} </h2>
