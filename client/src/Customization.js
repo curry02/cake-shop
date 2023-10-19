@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {Link } from "react-router-dom";
 import Step2 from "./Step2";
+import Bar from "./Bar";
 
 const Customization = () => {
     const [shape, setShape]=useState("");
@@ -8,21 +9,9 @@ const Customization = () => {
 
 
     return (
-
-        <>
-        <div className="square">
-            <button onClick={()=>{
-                setShape("square");
-                cake["shape"]=shape;
-                }}><img> </img></button>
-        </div>
-        <div className="circle">
-            <button onClick={()=>{
-                setShape("circle");
-                cake["shape"] =shape;
-                }}><img> </img></button>
-        </div>
-
+<>
+        <Bar />
+      
         <Link to="step2"> <Step2 cake={cake}/></Link>
         </>
         );
